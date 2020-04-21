@@ -1,0 +1,7 @@
+<div class="UsernameInputForm">
+    <div class="InputAndButton">
+        <input class="InputUserName" type="text" placeholder="Имя пользователя" (input)="onInputUserName()" [(ngModel)]="CurrentUserName" >
+        <button class="CommitUsername" type="button" [disabled]="ButtonComitDisable" (click)="onClickCommitUsername()">Сбросить</button>
+    </div>
+    <p>{{CurrentUserName}}</p>
+</div>
